@@ -1,4 +1,5 @@
 import cv2
+import matplotlib.pyplot as plot
 
 # Zongyu Wu, 09/10/2024
 
