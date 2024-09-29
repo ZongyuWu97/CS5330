@@ -13,10 +13,10 @@ r, g, b = flowers[:, :, 0], flowers[:, :, 1], flowers[:, :, 2]
 
 # Take average
 Ave = r / 3 + g / 3 + b / 3
-NTSC = 0.299 * r + 0.587 * g + 0.114 * b
+NTSC = 0.299 * b + 0.587 * g + 0.114 * r
 
 # Format average
-Ave = Ave.astype(np.uint8)
+Ave = Ave
 NTSC = NTSC.astype(np.uint8)
 
 # Show gray images
