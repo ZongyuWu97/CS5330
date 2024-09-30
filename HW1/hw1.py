@@ -40,10 +40,10 @@ equalize = cv2.equalizeHist(img)
 
 
 # Show images
-cv2.imshow("equalizeHist", equalize)
+cv2.imshow("Built in equalizeHist", equalize)
 cv2.imshow("Manual equalizeHist", manual_equ(img))
-cv2.imshow("Another image I chose", me)
-cv2.imshow("Another image I chose after equalization", manual_equ(me))
+cv2.imshow("Me", me)
+cv2.imshow("Me after equalization", manual_equ(me))
 
 
 # Part2
@@ -99,6 +99,8 @@ def thermal(filename):
 
 
 thermal_flower = thermal("flowers.jpg")
+thermal_me = thermal("me.jpeg")
 cv2.imshow("thermal flower", thermal_flower)
+cv2.imshow("thermal me", thermal_me)
 
 cv2.waitKey(0)

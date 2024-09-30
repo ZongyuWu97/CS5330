@@ -29,7 +29,7 @@ def addNoise(img, percent):
         i += 1
         viewed.add((x, y))
 
-        if np.random.randint(1):
+        if np.random.randint(0, 2):
             img[y][x] = 255
         else:
             img[y][x] = 0
