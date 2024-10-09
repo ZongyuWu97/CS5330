@@ -98,4 +98,5 @@ axes[2].imshow(cb, cmap="gray", vmin=0, vmax=255)
 #     ax.tick_params(axis="both", which="major", labelsize=8)
 #     ax.tick_params(axis="both", which="minor", labelsize=8)
 
+plt.savefig("result")
 plt.show()
